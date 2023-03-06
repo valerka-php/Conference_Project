@@ -1,0 +1,857 @@
+{
+	"info": {
+		"_postman_id": "37bf89c7-2e7a-4f01-b402-aff2c304d480",
+		"name": "Quest Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22837860"
+	},
+	"item": [
+		{
+			"name": "Conference",
+			"item": [
+				{
+					"name": "conferences.create",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:17000/conferences/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "17000",
+							"path": [
+								"conferences",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "conferences.show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:17000/conferences/?id=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "17000",
+							"path": [
+								"conferences",
+								""
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "conferences.edit",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "default",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:17000/conferences/1/edit",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "17000",
+							"path": [
+								"conferences",
+								"1",
+								"edit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "conferences.store",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:17000/conferences/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "17000",
+							"path": [
+								"conferences",
+								""
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "conferences.update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:17000/conferences/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "17000",
+							"path": [
+								"conferences",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "conferences.join",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "/conferences/1/join",
+							"path": [
+								"conferences",
+								"1",
+								"join"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "conferences.leave",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:17000/conferences/1/leave",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "17000",
+							"path": [
+								"conferences",
+								"1",
+								"leave"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "conferences.delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:17000/conferences/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "17000",
+							"path": [
+								"conferences",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Report",
+			"item": [
+				{
+					"name": "reports.create",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:17000/reports/{conference}/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "17000",
+							"path": [
+								"reports",
+								"{conference}",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reports.store",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:17000/reports/{conference}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "17000",
+							"path": [
+								"reports",
+								"{conference}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reports.show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:17000/reports/{conference}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "17000",
+							"path": [
+								"reports",
+								"{conference}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "report.home",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:17000/report/{report}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "17000",
+							"path": [
+								"report",
+								"{report}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reports.delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:17000/reports/{report}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "17000",
+							"path": [
+								"reports",
+								"{report}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reports.leave",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:17000/reports/{report}/leave",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "17000",
+							"path": [
+								"reports",
+								"{report}",
+								"leave"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reports.update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:17000/reports/{report}/update/{conference}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "17000",
+							"path": [
+								"reports",
+								"{report}",
+								"update",
+								"{conference}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Comment",
+			"item": [
+				{
+					"name": "comments.create",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:17000/comments/{report}/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "17000",
+							"path": [
+								"comments",
+								"{report}",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "comments.store",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:17000/comments",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "17000",
+							"path": [
+								"comments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "comments.edit",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:17000/comments/{comment}/edit/{report}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "17000",
+							"path": [
+								"comments",
+								"{comment}",
+								"edit",
+								"{report}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "comments.update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:17000/comments/{comment}/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "17000",
+							"path": [
+								"comments",
+								"{comment}",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "comments.get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:17000/comments/{report}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "17000",
+							"path": [
+								"comments",
+								"{report}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Category",
+			"item": [
+				{
+					"name": "categories.create",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:17000/categories/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "17000",
+							"path": [
+								"categories",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "categories.store",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:17000/categories",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "17000",
+							"path": [
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "categories.show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:17000/categories",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "17000",
+							"path": [
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "categories.delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:17000/categories/{category}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "17000",
+							"path": [
+								"categories",
+								"{category}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "categories.edit",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:17000/categories/{category}/edit'",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "17000",
+							"path": [
+								"categories",
+								"{category}",
+								"edit'"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "categories.update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:17000/categories/{category}/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "17000",
+							"path": [
+								"categories",
+								"{category}",
+								"update"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Favorite",
+			"item": [
+				{
+					"name": "favorites.store",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:17000/favorite/{report}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "17000",
+							"path": [
+								"favorite",
+								"{report}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "favorites.delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:17000/favorite/{report}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "17000",
+							"path": [
+								"favorite",
+								"{report}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "favorites.index",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:17000/favorites/{user}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "17000",
+							"path": [
+								"favorites",
+								"{user}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Export",
+			"item": [
+				{
+					"name": "conferences.export.csv",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:17000/conferences/export/csv",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "17000",
+							"path": [
+								"conferences",
+								"export",
+								"csv"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reports.export.csv",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:17000/reports/{conference}/export/csv",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "17000",
+							"path": [
+								"reports",
+								"{conference}",
+								"export",
+								"csv"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listeners.export.csv",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:17000/users/{conference}/export/csv",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "17000",
+							"path": [
+								"users",
+								"{conference}",
+								"export",
+								"csv"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "comments.export.csv",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:17000/comments/{report}/export/csv",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "17000",
+							"path": [
+								"comments",
+								"{report}",
+								"export",
+								"csv"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Zoom",
+			"item": [
+				{
+					"name": "meetings.all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:17000/meetings",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "17000",
+							"path": [
+								"meetings"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "downloads.presentation",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:17000/download/{presentation}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "17000",
+					"path": [
+						"download",
+						"{presentation}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "conferences-category.index",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:17000/conferences/category/{category}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "17000",
+					"path": [
+						"conferences",
+						"category",
+						"{category}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "report-category.index",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:17000/reports/category/{category}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "17000",
+					"path": [
+						"reports",
+						"category",
+						"{category}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "search.index",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:17000/search",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "17000",
+					"path": [
+						"search"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "downloads.file",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:17000/downloads/{file}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "17000",
+					"path": [
+						"downloads",
+						"{file}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

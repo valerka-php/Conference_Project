@@ -1,0 +1,665 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.carousel-plans{
+    display: flex !important;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.plan-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-plans-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.admin-error {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.paginator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.countdown {
+    min-height: 72px;
+}
+
+.zoom-links-table {
+    min-height: 528px
+}
+
+.link-zoom {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.flip-card {
+    font-size: 30px !important;
+}
+
+.dialog-spinner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.export-link {
+    font-size: 33px;
+    background: darkgrey;
+    padding: 11px;
+    border-radius: 25px;
+}
+
+.filter-export {
+    display: flex;
+    justify-content: center;
+    margin-top: 19px;
+}
+
+.export-dialog-link {
+    height: 154px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.filter-form-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.download-btn {
+    text-transform: uppercase;
+}
+
+.navbar-content-custom {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.category-badge {
+    display: flex;
+}
+
+.card-footer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 52px;
+    padding: 0.5rem;
+    justify-content: space-around;
+}
+
+.card-footer-bottom-layer {
+    display: flex;
+    width: auto;
+    margin-top: 10px
+}
+
+.card-footer-top-layer {
+    width: auto;
+    display: flex;
+    min-height: 38px;
+}
+
+.card-footer-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.conference-card-body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 15px;
+    min-height: 635px;
+    height: 635px;
+}
+
+.conference-card {
+    width: 345px;
+    max-height: 287px;
+    margin-bottom: 25px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.conference-card:hover {
+    background-color: #a8d4b2;
+}
+
+.register-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.register-form-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.share-link {
+    font-size: 30px;
+}
+
+.btn-conference {
+    width: 93px;
+    height: 36px;
+    text-transform: uppercase
+}
+
+.not-available-conference {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 36px;
+}
+
+.btn-details {
+    width: 100px;
+    height: 36px;
+    text-transform: uppercase;
+}
+
+.v-messages__message {
+    margin-bottom: 11px;
+    color: red;
+    font-size: 14px;
+}
+
+.error-form {
+    margin-bottom: 11px;
+    color: red;
+    font-size: 15px;
+    padding-left: 16px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.test {
+    background-color: red;
+}
+
+.btn-join {
+    color: black;
+    background-color: #4aad18;
+    border: 1px solid #0b0b0c;
+    min-width: 93px;
+    text-transform: uppercase;
+}
+
+.btn-leave {
+    color: black;
+    background-color: #eeb864;
+    border: 1px solid #0b0b0c;
+    height: 35.99px;
+    text-transform: uppercase;
+    min-width: 93px;
+}
+
+.conference-show {
+    display: flex;
+    flex-direction: row;
+    font-size: 32px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 50px;
+}
+
+.navbar-content-custom {
+    margin-left: auto;
+}
+
+.nav-item {
+    height: 60px;
+}
+
+.layout-item-list {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    padding-right: 10px;
+    padding-top: 16px;
+}
+
+.show {
+    visibility: visible;
+}
+
+.conference-field-title {
+    justify-content: center;
+}
+
+.conference-field {
+    display: flex;
+    justify-content: space-between;
+}
+
+.map {
+    width: 500px;
+    height: 500px;
+    background-color: #00b0ff;
+}
+
+.category-form {
+    display: flex;
+    width: 360px;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 25px;
+}
+
+.category-show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7px;
+}
+
+.category-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subcategory-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.category-edit {
+    display: flex;
+    margin-left: auto;
+}
+
+.tree-component {
+    display: flex;
+}
+
+.category-items {
+    width: 260px;
+    display: flex;
+}
+
+.favorite-reports {
+    display: flex;
+    justify-content: center;
+    font-size: 55px;
+    margin-top: 58px;
+    color: darkgrey;
+}
+
+.category-is-empty {
+    display: flex;
+    justify-content: center;
+    margin-top: 72px;
+    font-size: 38px;
+    color: grey;
+}
+
+.errors {
+    color: red;
+}
+
+.category-item:hover {
+    background-color: lightgray;
+}
+
+
+.parent-category-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flash-message-home {
+    margin-top: 13px;
+    padding-left: 30px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-size: 32px;
+    color: blue;
+}
+
+.create-conference-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 55px;
+}
+
+.conference-show-footer {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    min-width: 330px;
+    margin-top: 15px;
+}
+
+.user-title {
+    display: flex;
+    justify-content: center;
+}
+
+.title-conference {
+    height: 80px;
+}
+
+.home-layout {
+    display: flex;
+    padding: 17px;
+    justify-content: space-between;
+}
+
+.user-interface {
+    display: flex;
+}
+
+.layout-home-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.conference-leave-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.home-login-logout {
+    display: flex;
+    justify-content: flex-end;
+    padding: 17px;
+}
+
+.card-footer-links {
+    min-height: 45px;
+}
+
+.report-create {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+}
+
+.report-time {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.report-presentation {
+    display: flex;
+}
+
+.set-time {
+    display: flex;
+}
+
+.card-report {
+    max-width: 345px;
+    min-width: 345px;
+    margin-left: 15px;
+    margin-top: 25px;
+    margin-right: 15px;
+}
+
+.card-action {
+    min-height: 64px;
+}
+
+.comment-badge {
+    font-size: 30px;
+}
+
+.add-favorite {
+    font-size: 30px;
+}
+
+.profile-form-input {
+    height: 98px;
+}
+
+.form-check {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.filter-conference-date {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 7px;
+}
+
+.filter-count-report {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.conference-filter-icon {
+    font-size: 30px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 55px;
+}
+
+.search-result {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-form {
+    flex-direction: column;
+}
+
+.search-form-input {
+    display: flex;
+    width: 390px;
+    height: 36px;
+}
+
+.filter-report-set-time {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.filter-form {
+    width: 390px !important;
+    background: aliceblue;
+    border-radius: 31px;
+}
+
+.filter-report-time {
+    display: flex;
+    flex-direction: column;
+}
+
+.set-time {
+
+}
+
+.conference-empty {
+    font-size: 40px;
+    color: grey;
+    display: flex;
+    justify-content: center;
+    margin-top: 67px
+}
+
+.report-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 15px;
+    min-height: 635px;
+    height: 635px;
+}
+
+.plan-subscription-btn{
+    display: flex;
+    justify-content: center;
+}
+
+.plan-card:hover{
+    background-color: #86cae1;
+}
+
+.card-report-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.v-card-subtitle {
+    margin-top: 7px;
+}
+
+.v-list-group {
+    width: 335px;
+}
+
+.v-list {
+    width: 400px;
+}
+
+.report-index {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.report-title {
+    font-size: 33px;
+    margin-top: 25px;
+}
+
+.report-description {
+    margin-top: 18px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.report-footer-buttons {
+    display: flex;
+    margin-top: 25px;
+}
+
+.report-add-comment {
+    width: auto;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.card-report-time {
+    display: flex;
+    justify-content: center;
+}
+
+.report-comments-counter {
+    background: #534c4c;
+    font-size: 21px;
+    width: 34px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+}
+
+.btn-report {
+    width: 93px;
+    text-transform: uppercase;
+}
+
+.btn-top-layer {
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.comment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid gainsboro;
+    border-radius: 21px;
+}
+
+.comment-text {
+    width: 100%;
+    display: flex;
+    margin-left: 100px;
+}
+
+.comment-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 11px;
+}
+
+.comment-edit-btn {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 15px;
+}
+
+.comment-editor {
+    margin: 25px;
+}
+
+.ck-content {
+    min-height: 170px;
+}
+
+.comment-editor-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 25px;
+    margin-top: 15px;
+}
+
+.comment-add-btn {
+    text-transform: uppercase;
+}
